@@ -1,6 +1,6 @@
 const products = [
   {
-    name: "Food- mooto holdings food",
+    name: "Mangoes- mooto holdings food",
     image: "/images/6.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
@@ -10,7 +10,7 @@ const products = [
     numReviews: 4,
   },
   {
-    name: "Food- mooto holdings food",
+    name: "Fruit - mooto holdings food",
     image: "/images/5.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
@@ -20,7 +20,7 @@ const products = [
     numReviews: 2,
   },
   {
-    name: "Food- mooto holdings food",
+    name: "Vegitable - mooto holdings food",
     image: "/images/4.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
@@ -30,7 +30,7 @@ const products = [
     numReviews: 3,
   },
   {
-    name: "Food- mooto holdings food",
+    name: "Fruit - mooto holdings food",
     image: "/images/3.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
