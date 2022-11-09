@@ -6,6 +6,7 @@ const ProductsStatistics = () => {
       <div className="card mb-4 shadow-sm">
         <article className="card-body">
           <h5 className="card-title">Products statistics</h5>
+          // eslint-disable-next-line jsx-a11y/iframe-has-title
           <iframe
             style={{
               background: "#FFFFFF",

@@ -148,6 +148,12 @@ const OrderScreen = ({ match }) => {
                         <p className="text-white text-center text-sm-start">
                           Not Delivered
                         </p>
+                        <br />
+                        <>
+                          <button onClick={""} className="btn btn-dark col-12">
+                            MARK AS DELIVERED
+                          </button>
+                        </>
                       </div>
                     )}
                   </div>
