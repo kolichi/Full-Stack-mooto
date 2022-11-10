@@ -9,6 +9,7 @@ import Message from "./../components/LoadingError/Error";
 import moment from "moment";
 import axios from "axios";
 import { ORDER_PAY_RESET } from "../Redux/Constants/OrderConstants";
+import { deliverOrder } from "../Redux/Actions/OrderActions";
 
 const OrderScreen = ({ match }) => {
   window.scrollTo(0, 0);
@@ -21,6 +22,9 @@ const OrderScreen = ({ match }) => {
   const orderPay = useSelector((state) => state.orderPay);
   const { loading: loadingPay, success: successPay } = orderPay;
 
+  const orderDeliver = useSelector((state) => state.orderDeliver);
+  const { loading: loadingDelivered, success: successDelivered } = orderDeliver;
+
   if (!loading) {
     const addDecimals = (num) => {
       return (Math.round(num * 100) / 100).toFixed(2);
@@ -30,6 +34,14 @@ const OrderScreen = ({ match }) => {
       order.orderItems.reduce((acc, item) => acc + item.price * item.qty, 0)
     );
   }
+
+  useEffect(() => {
+    dispatch(getOrderDetails(orderId));
+  }, [dispatch, orderId, successDelivered]);
+
+  const deliverHandler = () => {
+    dispatch(deliverOrder(order));
+  };
 
   useEffect(() => {
     const addPayPalScript = async () => {
@@ -150,7 +162,11 @@ const OrderScreen = ({ match }) => {
                         </p>
                         <br />
                         <>
-                          <button onClick={""} className="btn btn-dark col-12">
+                          {loadingDelivered && <Loading />}
+                          <button
+                            onClick={deliverHandler}
+                            className="btn btn-dark col-12"
+                          >
                             MARK AS DELIVERED
                           </button>
                         </>
