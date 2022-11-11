@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
 
 const ProductsStatistics = () => {
@@ -6,7 +7,6 @@ const ProductsStatistics = () => {
       <div className="card mb-4 shadow-sm">
         <article className="card-body">
           <h5 className="card-title">Products statistics</h5>
-          // eslint-disable-next-line jsx-a11y/iframe-has-title
           <iframe
             style={{
               background: "#FFFFFF",
@@ -16,7 +16,7 @@ const ProductsStatistics = () => {
               width: "100%",
               height: "350px",
             }}
-            src="https://charts.mongodb.com/charts-shoeshoptutorial-bzbxw/embed/charts?id=1f926980-090b-44c6-b011-3e94b2efddca&maxDataAge=3600&theme=light&autoRefresh=true"
+            src="https://charts.mongodb.com/charts-mootoholdings-lpuvb/embed/charts?id=636da019-9a76-43ce-826d-da88d239fedc&maxDataAge=3600&theme=light&autoRefresh=true"
           ></iframe>
         </article>
       </div>
