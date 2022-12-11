@@ -19,6 +19,9 @@ app.use("/api/orders", orderRouter);
 app.get("/api/config/paypal", (req, res) => {
   res.send(process.env.PAYPAL_CLIENT_ID);
 });
+app.get("/api/config/flw", (req, res) => {
+  res.send(process.env.FLW_SECRET_KEY);
+});
 
 // ERROR HANDLER
 app.use(notFound);
